@@ -1,57 +1,42 @@
-body {
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    background: #000;
-    color: white;
-    font-family: Arial, sans-serif;
+<body>
 
-}
-
-
-.menu {
-
-    position: fixed;
-
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 75px;
-
-    background: #000;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    border-top: 1px solid #c5a328;
-
-}
+    <main id="app">
+        <h1>Бюджет</h1>
+        <p>Главная страница приложения</p>
+    </main>
 
 
-.menu button {
+    <nav class="menu">
 
-    background: none;
+        <button onclick="openPage('budget')">
+            Бюджет
+        </button>
 
-    border: none;
+        <button onclick="openPage('stats')">
+            Статистика
+        </button>
 
-    cursor: pointer;
+        <button onclick="openPage('history')">
+            История
+        </button>
 
-}
+        <button onclick="openPage('settings')">
+            Настройки
+        </button>
 
-
-.menu span {
-
-    font-size: 30px;
-
-    filter: grayscale(1);
-
-    color: #c5a328;
-
-}
+    </nav>
 
 
-.menu button:hover span {
+<script src="script.js"></script>
 
-    transform: scale(1.2);
-
-}
+</body>
+</html>
